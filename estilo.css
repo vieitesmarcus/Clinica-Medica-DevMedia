@@ -1,0 +1,122 @@
+
+#capa{
+    background-image: url(img/recepcao.png);
+    background-size: cover;
+    height: 426px;
+}
+
+.recepcao{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+.recepcao h1{
+    color: #fff;
+}
+
+.sobre-clinica{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.sobre-clinica div ul{
+    margin-left: 40px;
+}
+.sobre-clinica div h3{
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+#sobre{
+    text-align: center;
+}
+
+/* especialidades */
+#especialidades{
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+}
+
+.figuras{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    margin: 0 auto;
+}
+.figuras figure{
+    margin: 20px;
+    text-align: center;
+    box-shadow: 1px 0px 10px #000;
+}
+.figuras figcaption{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    text-transform: uppercase;
+}
+.figura{
+    width: 100%;
+}
+
+.botao-esp{
+    margin: 0 auto;
+    background: #00cad1;
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.botao-esp a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Fim Especialidades */
+
+/* Contato */
+#contato {
+    height: 600px;
+}
+#contato p{
+    margin-bottom: 15px;
+}
+
+#contato div:last-child {
+   height: 50%;
+}
+#contato div iframe{
+    height: 100%;
+    width: 100%;
+}
+/* Fim Contato */
+
+@media screen and (max-width: 425px){
+    .sobre-clinica img{
+        display: none;
+    }
+    .figuras{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px){
+    .sobre-clinica img{
+        display: none;
+    }
+
+    .figuras {
+        flex-flow: row wrap;
+    }
+    .figuras figure{
+        width: calc(100%/3);
+    }
+
+}
