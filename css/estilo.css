@@ -1,6 +1,6 @@
 
 #capa{
-    background-image: url(/img/recepcao.png);
+    background-image: url('../img/recepcao.png');
     background-size: cover;
     height: 426px;
 }
